@@ -20,8 +20,12 @@ jobs:
         with:
           root_file: hsrp.tex
 
-      - name: Upload PDF artifact
-        uses: actions/upload-artifact@v4
+      - name: Move PDF into /hsrp
+        run: |
+          cp hsrp.pdf ./hsrp.pdf
+
+      - name: Commit PDF back to repository
+        uses: stefanweifel/git-auto-commit-action@v5
         with:
-          name: hsrp-pdf
-          path: hsrp.pdf
+          commit_message: "Updated generated hsrp.pdf"
+          file_pattern: hsrp.pdf
