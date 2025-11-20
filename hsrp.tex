@@ -1,14 +1,25 @@
 \documentclass{book}
 \usepackage[a4paper, margin=1in]{geometry}
-\title{\texttt{hsrp}: \\ Documentation and User Manual}
+\title{\texttt{hsrp} User Manual}
 \author{SystemRosalyn}
 \date{\today}
 \begin{document}
+	\pagenumbering{roman}
+	\pagestyle{headings}
 	\maketitle
 	\tableofcontents
+	\setcounter{chapter}{-1}
 	\chapter{Abstract}
 		\section{Purpose of \texttt{hsrp}}
+			\paragraph{}
+			The purpose of the tool, \texttt{hsrp} is to provide the user, group, or administrator with a self-managed password manager, similar to the likes of Apple iOS, Apple MacOS, AndroidOS, or Google Chrome. These password managers allow users to keep their own passwords secure with options of SHA-256, SHA-512, and Argon with the option to input salt-counts if needed. This will allow the consumer using this utility to secure their passwords in a tightly-controlled binary file, so that their data can be out of the reach of data brokers.
+		\section{Applications of \texttt{hsrp}}
+			\paragraph{}
+			Applications of this utility are limited due to the limited scope of the utiliy, along with the fact that most users will not be so interested in the source code, as they are protecting their own data as soon and as easily as possible. Hopefully, there will be further applications of this tool in the future.
+	\setcounter{chapter}{0}
 	\chapter{Introduction to \texttt{hsrp}}
+	\pagenumbering{arabic}
+	\setcounter{page}{1}
 		\section{Command Structure}
 			\subsection{Syntax}
 			\subsection{Example}
